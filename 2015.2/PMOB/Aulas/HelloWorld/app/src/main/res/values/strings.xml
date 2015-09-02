@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="nome_matricula">Nome - Matrícula</string>
+    <string name="action_settings">Configurações</string>
+
+    <string name="valor1">Valor 1</string>
+    <string name="valor2">Valor 2</string>
+    <string name="title_activity_segunda_tela">SegundaTelaActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>
