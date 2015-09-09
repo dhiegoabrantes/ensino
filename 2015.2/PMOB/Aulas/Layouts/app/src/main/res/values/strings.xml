@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Layouts</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_width_height_layout">WidthHeightActivity</string>
+    <string name="title_activity_width_height">WidthHeightActivity</string>
+    <string name="title_activity_margin_padding">MarginPaddingActivity</string>
+    <string name="title_activity_frame_layout">FrameLayoutActivity</string>
+    <string name="title_activity_relative_layout">RelativeLayoutActivity</string>
+    <string name="title_activity_linear_layout">LinearLayoutActivity</string>
+    <string name="title_activity_table_layout">TableLayoutActivity</string>
+    <string name="title_activity_grid_layout">GridLayoutActivity</string>
+    <string name="title_activity_scroll_view">ScrollViewActivity</string>
+</resources>

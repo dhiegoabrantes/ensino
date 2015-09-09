@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity" android:orientation="vertical">
+
+    <Button
+        android:id="@+id/buttonAlturaLargura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Altura e Largura"/>
+
+    <Button
+        android:id="@+id/buttonMarginPadding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Margin e Padding"/>
+
+    <Button
+        android:id="@+id/buttonFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FrameLayout"/>
+
+    <Button
+        android:id="@+id/buttonRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RelativeLayout"/>
+
+    <Button
+        android:id="@+id/buttonLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LinearLayout"/>
+
+    <Button
+        android:id="@+id/buttonTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TableLayout"/>
+
+    <Button
+        android:id="@+id/buttonGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GridLayout"/>
+
+    <Button
+        android:id="@+id/buttonScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ScrollView"/>
+</LinearLayout>
