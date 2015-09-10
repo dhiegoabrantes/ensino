@@ -1,21 +1,28 @@
 package br.edu.nassau.pweb.dao;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class GenericDao {
 
-	public Connection getConnection() {
+	protected Connection conn;
+
+	protected void openConn(){
 		try {
-			String url = "jdbc:mysql://localhost:3306/pweb";
-			Class.forName("com.mysql.jdbc.Driver");
-			return DriverManager.getConnection(url, "root", "");
+			if(conn != null || conn.isClosed()){
+				conn = new ConnectionFactory().getConnection();
+			}
 		} catch (SQLException e) {
-			throw new RuntimeException(e);
-		} catch (ClassNotFoundException e) {
-			throw new RuntimeException(e);
+			conn = new ConnectionFactory().getConnection();
 		}
 	}
 	
+	protected void closeConn(){
+		try {
+			if( conn != null && !conn.isClosed() )
+				conn.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 }
