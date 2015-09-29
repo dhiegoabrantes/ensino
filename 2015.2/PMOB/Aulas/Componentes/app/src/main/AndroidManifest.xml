@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.nassau.pmob.componentes" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.TextViewActivity"
+            android:label="@string/title_activity_text_view" >
+            <intent-filter>
+                <action android:name="android.intent.action.SENDTO" />
+
+                <data android:scheme="mailto" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.EditTextActivity"
+            android:label="@string/title_activity_edit_text" >
+        </activity>
+        <activity
+            android:name=".view.ArrayAdapterActivity"
+            android:label="@string/title_activity_array_adapter" >
+        </activity>
+        <activity
+            android:name=".view.CustomAdapterActivity"
+            android:label="@string/title_activity_custom_adapter" >
+        </activity>
+        <activity
+            android:name=".view.MyActionBarActivity"
+            android:label="@string/title_activity_action_bar" >
+        </activity>
+    </application>
+
+</manifest>

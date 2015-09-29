@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:text="Usuário\nEmail: email@mail.com\nFone: +558399999999\nhttp://dhiegoabrantes.com"
+        android:autoLink="phone|email|web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAutoLink" android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in orci eget quam posuere sollicitudin. Donec eleifend nibh et diam pretium, nec efficitur lorem aliquam."
+        android:textSize="24sp"
+        android:ellipsize="end"
+        android:maxLines="2" android:padding="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fonte monospace"
+        android:textSize="20sp"
+        android:typeface="monospace" android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fonte customizada usando GoodDog.otf"
+        android:textSize="20sp"
+        android:id="@+id/textViewFonte" android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto Negrito"
+        android:textSize="20sp"
+        android:textStyle="bold" android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto Itálico"
+        android:textSize="20sp"
+        android:textStyle="italic" android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto Sublinhado"
+        android:textSize="20sp"
+        android:id="@+id/textViewSublinhado" android:padding="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto Riscado"
+        android:textSize="20sp"
+        android:id="@+id/textViewRiscado" android:padding="10dp"/>
+
+</LinearLayout>
