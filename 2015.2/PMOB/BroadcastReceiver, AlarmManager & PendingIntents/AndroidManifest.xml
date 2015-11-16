@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.dhiegoabrantes.wheresmypack" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+    <!-- 
+        Declaração do TrackPackReceiver!
+
+        a propriedade android:name diz respeito ao nome do evento que o receiver ficará escutando. quando um broadcast com este valor for disparado, o receiver é executado!
+
+    -->
+        <receiver android:name=".service.receiver.TrackPackReceiver">
+            <intent-filter>
+                <action android:name="br.com.dhiegoabrantes.wheresmypack.trackPackReceiver"/>
+                <category android:name="ANDROID.INTENT.CATEGORY.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+    <!-- 
+        Declaração do BootReceiver!
+
+        Configuramos a propriedade android:name com o valor 'ANDROID.INTENT.ACTION.BOOT_COMPLETED', que é enviado no broadcast sempre que o sistema é inicializado.
+
+        Com isso, a classe BootReceiver será executada sempre que o sistema for iniciado. Assim garantimos que o alarme será sempre criado.
+
+    -->
+        <receiver android:name=".service.receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="ANDROID.INTENT.ACTION.BOOT_COMPLETED"/>
+                <category android:name="ANDROID.INTENT.CATEGORY.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.PackActivity"
+            android:label="@string/title_activity_pack" >
+        </activity>
+        <activity
+            android:name=".view.PackEventActivity"
+            android:label="@string/title_activity_pack_event" >
+        </activity>
+    </application>
+
+</manifest>
